@@ -1,6 +1,6 @@
 import {
   Volume
-} from '../../Volume.js';
+} from '../Volume.js';
 import {
   DefaultLoadingManager,
   FileLoader,

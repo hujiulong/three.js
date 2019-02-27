@@ -1,9 +1,9 @@
 import {
   CopyShader
-} from '../../shaders/CopyShader.js';
+} from '../shaders/CopyShader.js';
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 import {
   AdditiveBlending,
   Color,

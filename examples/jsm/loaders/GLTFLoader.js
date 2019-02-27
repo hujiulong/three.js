@@ -1,12 +1,12 @@
 import {
   BufferGeometryUtils
-} from '../../utils/BufferGeometryUtils.js';
+} from '../utils/BufferGeometryUtils.js';
 import {
   DRACOLoader
-} from '../DRACOLoader.js';
+} from './DRACOLoader.js';
 import {
   DDSLoader
-} from '../DDSLoader.js';
+} from './DDSLoader.js';
 import {
   AddEquation,
   AlwaysDepth,

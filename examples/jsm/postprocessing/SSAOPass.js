@@ -1,11 +1,11 @@
 import {
   CopyShader
-} from '../../shaders/CopyShader.js';
+} from '../shaders/CopyShader.js';
 import {
   SSAOBlurShader,
   SSAODepthShader,
   SSAOShader
-} from '../../shaders/SSAOShader.js';
+} from '../shaders/SSAOShader.js';
 import {
   AddEquation,
   Color,
@@ -35,7 +35,7 @@ import {
 } from '../../../build/three.module.js';
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 /**
  * @author Mugen87 / https://github.com/Mugen87
  */

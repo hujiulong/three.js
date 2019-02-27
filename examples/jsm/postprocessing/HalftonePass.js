@@ -8,10 +8,10 @@ import {
 } from '../../../build/three.module.js';
 import {
   HalftoneShader
-} from '../../shaders/HalftoneShader.js';
+} from '../shaders/HalftoneShader.js';
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 /**
  * @author meatbags / xavierburrow.com, github/meatbags
  *

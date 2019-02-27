@@ -1,9 +1,9 @@
 import {
   ConvolutionShader
-} from '../../shaders/ConvolutionShader.js';
+} from '../shaders/ConvolutionShader.js';
 import {
   CopyShader
-} from '../../shaders/CopyShader.js';
+} from '../shaders/CopyShader.js';
 import {
   AdditiveBlending,
   LinearFilter,
@@ -19,7 +19,7 @@ import {
 } from '../../../build/three.module.js';
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 /**
  * @author alteredq / http://alteredqualia.com/
  */

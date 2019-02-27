@@ -1,6 +1,6 @@
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 /**
  * @author alteredq / http://alteredqualia.com/
  */

@@ -1,9 +1,9 @@
 import {
   CopyShader
-} from '../../shaders/CopyShader.js';
+} from '../shaders/CopyShader.js';
 import {
   LuminosityHighPassShader
-} from '../../shaders/LuminosityHighPassShader.js';
+} from '../shaders/LuminosityHighPassShader.js';
 import {
   AdditiveBlending,
   Color,
@@ -22,7 +22,7 @@ import {
 } from '../../../build/three.module.js';
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 /**
  * @author spidersharma / http://eduperiment.com/
  *

@@ -1,6 +1,6 @@
 import {
   ColladaLoader
-} from '../ColladaLoader.js';
+} from './ColladaLoader.js';
 import {
   DefaultLoadingManager,
   FileLoader,

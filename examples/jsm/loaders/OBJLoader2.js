@@ -1,6 +1,6 @@
 import {
   MTLLoader
-} from '../MTLLoader.js';
+} from './MTLLoader.js';
 import {
   DefaultLoadingManager,
   FileLoader,
@@ -9,7 +9,7 @@ import {
 } from '../../../build/three.module.js';
 import {
   LoaderSupport
-} from '../LoaderSupport.js';
+} from './LoaderSupport.js';
 /**
   * @author Kai Salmen / https://kaisalmen.de
   * Development repository: https://github.com/kaisalmen/WWOBJLoader

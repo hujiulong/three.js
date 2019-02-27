@@ -13,10 +13,10 @@ import {
 } from '../../../build/three.module.js';
 import {
   AfterimageShader
-} from '../../shaders/AfterimageShader.js';
+} from '../shaders/AfterimageShader.js';
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 /**
  * @author HypnosNova / https://www.threejs.org.cn/gallery/
  */

@@ -3,7 +3,7 @@ import {
 } from '../../../build/three.module.js';
 import {
   SSAARenderPass
-} from '../SSAARenderPass.js';
+} from './SSAARenderPass.js';
 /**
  *
  * Temporal Anti-Aliasing Render Pass

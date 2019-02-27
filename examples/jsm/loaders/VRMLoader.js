@@ -3,7 +3,7 @@ import {
 } from '../../../build/three.module.js';
 import {
   GLTFLoader
-} from '../GLTFLoader.js';
+} from './GLTFLoader.js';
 /**
  * @author Takahiro / https://github.com/takahirox
  */

@@ -1,6 +1,6 @@
 import {
   TGALoader
-} from '../TGALoader.js';
+} from './TGALoader.js';
 import {
   AmbientLight,
   AnimationClip,

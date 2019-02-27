@@ -12,10 +12,10 @@ import {
 } from '../../../build/three.module.js';
 import {
   DigitalGlitch
-} from '../../shaders/DigitalGlitch.js';
+} from '../shaders/DigitalGlitch.js';
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 /**
  * @author alteredq / http://alteredqualia.com/
  */

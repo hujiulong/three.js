@@ -1,6 +1,6 @@
 import {
   RGBELoader
-} from '../RGBELoader.js';
+} from './RGBELoader.js';
 import {
   CubeTexture,
   DataTexture,

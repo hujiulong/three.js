@@ -1,9 +1,9 @@
 import {
   NURBSCurve
-} from '../../curves/NURBSCurve.js';
+} from '../curves/NURBSCurve.js';
 import {
   TGALoader
-} from '../TGALoader.js';
+} from './TGALoader.js';
 import {
   AmbientLight,
   AnimationClip,
@@ -550,7 +550,7 @@ var FBXLoader = ( function () {
 					break;
 				default:
 					console.warn( 'THREE.FBXLoader: unknown material type "%s". Defaulting to MeshPhongMaterial.', type );
-					material = new MeshPhongMaterial( { color: 0x3300ff } );
+					material = new MeshPhongMaterial();
 					break;
 
 			}
@@ -583,11 +583,13 @@ var FBXLoader = ( function () {
 				parameters.color = new Color().fromArray( materialNode.DiffuseColor.value );
 
 			}
+
 			if ( materialNode.DisplacementFactor ) {
 
 				parameters.displacementScale = materialNode.DisplacementFactor.value;
 
 			}
+
 			if ( materialNode.Emissive ) {
 
 				parameters.emissive = new Color().fromArray( materialNode.Emissive.value );
@@ -598,31 +600,37 @@ var FBXLoader = ( function () {
 				parameters.emissive = new Color().fromArray( materialNode.EmissiveColor.value );
 
 			}
+
 			if ( materialNode.EmissiveFactor ) {
 
 				parameters.emissiveIntensity = parseFloat( materialNode.EmissiveFactor.value );
 
 			}
+
 			if ( materialNode.Opacity ) {
 
 				parameters.opacity = parseFloat( materialNode.Opacity.value );
 
 			}
+
 			if ( parameters.opacity < 1.0 ) {
 
 				parameters.transparent = true;
 
 			}
+
 			if ( materialNode.ReflectionFactor ) {
 
 				parameters.reflectivity = materialNode.ReflectionFactor.value;
 
 			}
+
 			if ( materialNode.Shininess ) {
 
 				parameters.shininess = materialNode.Shininess.value;
 
 			}
+
 			if ( materialNode.Specular ) {
 
 				parameters.specular = new Color().fromArray( materialNode.Specular.value );
@@ -645,7 +653,12 @@ var FBXLoader = ( function () {
 						parameters.bumpMap = self.getTexture( textureMap, child.ID );
 						break;
 
+					case 'Maya|TEX_ao_map':
+						parameters.aoMap = self.getTexture( textureMap, child.ID );
+						break;
+
 					case 'DiffuseColor':
+					case 'Maya|TEX_color_map':
 						parameters.map = self.getTexture( textureMap, child.ID );
 						break;
 
@@ -653,12 +666,12 @@ var FBXLoader = ( function () {
 						parameters.displacementMap = self.getTexture( textureMap, child.ID );
 						break;
 
-
 					case 'EmissiveColor':
 						parameters.emissiveMap = self.getTexture( textureMap, child.ID );
 						break;
 
 					case 'NormalMap':
+					case 'Maya|TEX_normal_map':
 						parameters.normalMap = self.getTexture( textureMap, child.ID );
 						break;
 

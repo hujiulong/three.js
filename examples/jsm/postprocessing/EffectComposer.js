@@ -1,13 +1,13 @@
 import {
   ClearMaskPass,
   MaskPass
-} from '../MaskPass.js';
+} from './MaskPass.js';
 import {
   ShaderPass
-} from '../ShaderPass.js';
+} from './ShaderPass.js';
 import {
   CopyShader
-} from '../../shaders/CopyShader.js';
+} from '../shaders/CopyShader.js';
 import {
   LinearFilter,
   RGBAFormat,

@@ -9,7 +9,7 @@ import {
 } from '../../../build/three.module.js';
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 /**
  * @author bhouston / http://clara.io/
  */

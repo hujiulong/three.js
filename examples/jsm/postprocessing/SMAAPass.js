@@ -1,6 +1,6 @@
 import {
   SMAAShader
-} from '../../shaders/SMAAShader.js';
+} from '../shaders/SMAAShader.js';
 import {
   LinearFilter,
   Mesh,
@@ -17,7 +17,7 @@ import {
 } from '../../../build/three.module.js';
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 /**
  * @author mpk / http://polko.me/
  */

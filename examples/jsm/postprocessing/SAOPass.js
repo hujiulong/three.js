@@ -1,16 +1,16 @@
 import {
   UnpackDepthRGBAShader
-} from '../../shaders/UnpackDepthRGBAShader.js';
+} from '../shaders/UnpackDepthRGBAShader.js';
 import {
   CopyShader
-} from '../../shaders/CopyShader.js';
+} from '../shaders/CopyShader.js';
 import {
   BlurShaderUtils,
   DepthLimitedBlurShader
-} from '../../shaders/DepthLimitedBlurShader.js';
+} from '../shaders/DepthLimitedBlurShader.js';
 import {
   SAOShader
-} from '../../shaders/SAOShader.js';
+} from '../shaders/SAOShader.js';
 import {
   AddEquation,
   Color,
@@ -38,7 +38,7 @@ import {
 } from '../../../build/three.module.js';
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 /**
  * @author ludobaka / ludobaka.github.io
  * SAO implementation inspired from bhouston previous SAO work

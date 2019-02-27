@@ -1,6 +1,6 @@
 import {
   UnpackDepthRGBAShader
-} from '../../shaders/UnpackDepthRGBAShader.js';
+} from '../shaders/UnpackDepthRGBAShader.js';
 import {
   DoubleSide,
   LinearFilter,

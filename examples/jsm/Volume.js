@@ -1,6 +1,6 @@
 import {
   VolumeSlice
-} from '../VolumeSlice.js';
+} from './VolumeSlice.js';
 import {
   Matrix3,
   Matrix4,

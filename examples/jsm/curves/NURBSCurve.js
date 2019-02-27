@@ -1,6 +1,6 @@
 import {
   NURBSUtils
-} from '../NURBSUtils.js';
+} from './NURBSUtils.js';
 import {
   Curve,
   Vector3,

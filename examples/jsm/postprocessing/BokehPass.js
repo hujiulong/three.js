@@ -1,6 +1,6 @@
 import {
   BokehShader
-} from '../../shaders/BokehShader.js';
+} from '../shaders/BokehShader.js';
 import {
   Color,
   LinearFilter,
@@ -18,7 +18,7 @@ import {
 } from '../../../build/three.module.js';
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 /**
  * Depth-of-field post-process with bokeh shader
  */

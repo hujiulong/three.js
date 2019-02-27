@@ -2,7 +2,7 @@ import {
   RenderableFace,
   RenderableLine,
   RenderableSprite
-} from '../Projector.js';
+} from './Projector.js';
 import {
   Box2,
   Camera,

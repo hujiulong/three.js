@@ -1,18 +1,18 @@
 import {
   FXAAShader
-} from '../../shaders/FXAAShader.js';
+} from '../shaders/FXAAShader.js';
 import {
   CopyShader
-} from '../../shaders/CopyShader.js';
+} from '../shaders/CopyShader.js';
 import {
   ShaderPass
-} from '../../postprocessing/ShaderPass.js';
+} from '../postprocessing/ShaderPass.js';
 import {
   EffectComposer
-} from '../../postprocessing/EffectComposer.js';
+} from '../postprocessing/EffectComposer.js';
 import {
   RenderPass
-} from '../../postprocessing/RenderPass.js';
+} from '../postprocessing/RenderPass.js';
 import {
   AdditiveBlending,
   BackSide,

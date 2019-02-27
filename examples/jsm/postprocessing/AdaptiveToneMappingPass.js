@@ -1,9 +1,9 @@
 import {
   ToneMapShader
-} from '../../shaders/ToneMapShader.js';
+} from '../shaders/ToneMapShader.js';
 import {
   LuminosityShader
-} from '../../shaders/LuminosityShader.js';
+} from '../shaders/LuminosityShader.js';
 import {
   LinearFilter,
   LinearMipMapLinearFilter,
@@ -20,10 +20,10 @@ import {
 } from '../../../build/three.module.js';
 import {
   CopyShader
-} from '../../shaders/CopyShader.js';
+} from '../shaders/CopyShader.js';
 import {
   Pass
-} from '../EffectComposer.js';
+} from './EffectComposer.js';
 /**
  * @author miibond
  * Generate a texture that represents the luminosity of the current scene, adapted over time
