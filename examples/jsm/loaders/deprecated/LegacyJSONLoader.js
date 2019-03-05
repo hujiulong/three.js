@@ -10,7 +10,7 @@ import {
   Vector2,
   Vector3,
   Vector4
-} from '../../../build/three.module.js';
+} from '../../../../build/three.module.js';
 /**
  * @author mrdoob / http://mrdoob.com/
  * @author alteredq / http://alteredqualia.com/
