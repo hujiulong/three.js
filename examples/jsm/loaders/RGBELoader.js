@@ -13,7 +13,7 @@ import {
 // https://github.com/mrdoob/three.js/issues/5552
 // http://en.wikipedia.org/wiki/RGBE_image_format
 
-var HDRLoader = RGBELoader = function ( manager ) {
+var RGBELoader = function ( manager ) {
 
 	this.manager = ( manager !== undefined ) ? manager : DefaultLoadingManager;
 	this.type = UnsignedByteType;
@@ -404,6 +404,6 @@ RGBELoader.prototype.setType = function ( value ) {
 
 
 export {
-  HDRLoader,
-  RGBELoader
+  RGBELoader,
+  RGBELoader as HDRLoader
 };
