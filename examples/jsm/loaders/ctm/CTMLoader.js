@@ -16,11 +16,8 @@ import {
 
 var CTMLoader = function () {
 
-	Loader.call( this );
-
 };
 
-CTMLoader.prototype = Object.create( Loader.prototype );
 CTMLoader.prototype.constructor = CTMLoader;
 
 // Load multiple CTM parts defined in JSON
@@ -64,7 +61,7 @@ CTMLoader.prototype.loadParts = function ( url, callback, parameters ) {
 
 				for ( var i = 0; i < jsonObject.materials.length; i ++ ) {
 
-					materials[ i ] = scope.createMaterial( jsonObject.materials[ i ], basePath );
+					materials[ i ] = Loader.prototype.createMaterial( jsonObject.materials[ i ], basePath );
 
 				}
 
